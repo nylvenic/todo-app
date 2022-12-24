@@ -11,49 +11,17 @@
         <div class="bg-primary box-shadow" id="add-todo">
             <div class="container">
                 <form>
-                    <input type="text" class="basic-box">
+                    <input type="text" class="basic-box" id="todo-input">
                     <button id="add-todo-btn">
                         <i class="fa-solid fa-plus"></i>
                     </button>
                 </form>
             </div>
         </div>
-        <div class="container">
-            <div class="todo-item basic-box box-shadow">
-                <p>Todo Item Text</p>
-                <div class="div todo-item-btns">
-                    <i class="fa-solid fa-lg fa-trash trash-btn"></i>
-                    <div class="divider"></div>
-                    <i class="fa-regular fa-lg fa-square-check complete-btn"></i>
-                </div>
-            </div>
-            <div class="todo-item basic-box box-shadow">
-                <p>Todo Item Text</p>
-                <div class="div todo-item-btns">
-                    <i class="fa-solid fa-lg fa-trash trash-btn"></i>
-                    <div class="divider"></div>
-                    <i class="fa-regular fa-lg fa-square-check complete-btn"></i>
-                </div>
-            </div>
-            <div class="todo-item basic-box box-shadow">
-                <p>Todo Item Text</p>
-                <div class="div todo-item-btns">
-                    <i class="fa-solid fa-lg fa-trash trash-btn"></i>
-                    <div class="divider"></div>
-                    <i class="fa-regular fa-lg fa-square-check complete-btn"></i>
-                </div>
-            </div>
+        <div class="container" id="pending-todos">
         </div>
         <div class="horizontal-divider"></div>
-        <div class="container">
-            <div class="todo-item basic-box box-shadow">
-                <p>Todo Item Text</p>
-                <div class="div todo-item-btns">
-                    <i class="fa-solid fa-lg fa-trash trash-btn"></i>
-                    <div class="divider"></div>
-                    <i class="fa-solid fa-lg fa-square-check complete-btn"></i>
-                </div>
-            </div>
+        <div class="container" id="completed-todos">
         </div>
         <script src="./js/index.js"></script>
     </body>

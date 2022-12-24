@@ -106,11 +106,7 @@ input:focus {
     outline: 0 !important;
 }
 
-.complete-btn {
-    color: var(--bg-primary);
-}
-
-.complete-btn:hover {
+.complete-btn:hover, .uncomplete-btn:hover {
     color: var(--bg-complement);
 }
 
@@ -122,7 +118,7 @@ input:focus {
     color: var(--color-alert);
 }
 
-.complete-btn, .trash-btn {
+.complete-btn, .trash-btn, .uncomplete-btn {
     cursor: pointer;
     transition: color .5s;
 }
