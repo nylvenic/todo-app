@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --default-size: 20px;
+    --bg-primary: #3498DB;
+    --bg-complement: #2980B9;
+    --color-alert: #E74C3C;
+    --bg-light: #eee;
+    --bg-light-complement: #fff;
+    --bg-grey: #bbb;
+    --bg-dark: #555;
+    --page-width: 960px;
+}
+
+body {
+    background: var(--bg-light);
+    font-family: 'Roboto', sans-serif;
+    color: var(--bg-dark);
+}
+
+form {
+    position: relative;
+}
+
+#add-todo-btn {
+    position: absolute;
+    right: calc(var(--default-size) * -1);
+    top: 50%;
+    transform:translateY(-50%);
+    padding: calc(var(--default-size) / 2);
+    border-radius: 9999px;
+    border: 0;
+    height: calc(var(--default-size) * 2 + 2px);
+    width: calc(var(--default-size) * 2 + 2px);
+    background: var(--bg-light);
+    cursor: pointer;
+    transition: background 1s;
+}
+
+.fa-plus {
+    color: var(--bg-complement);
+}
+
+input {
+    background: var(--bg-primary);
+    color: var(--bg-light);
+}
+
+#add-todo-btn:hover {
+    background: var(--bg-light-complement);
+}
+
+.bg-primary {
+    background: var(--bg-complement);
+}
+
+form {
+    padding: var(--default-size) 0;
+}
+
+input {
+    border: 0;
+}
+
+.basic-box {
+    padding: 0 var(--default-size);
+    height: calc(var(--default-size) * 2);
+    width: 100%;
+    border-radius: 4px;
+}
+
+.todo-item {
+    background: var(--bg-light-complement);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: var(--default-size);
+}
+
+.box-shadow {
+    box-shadow: 2px 4px 10px 1px rgba(0,0,0,0.21);
+    -webkit-box-shadow: 2px 4px 10px 1px rgba(0,0,0,0.21);
+    -moz-box-shadow: 2px 4px 10px 1px rgba(0,0,0,0.21);
+}
+
+.todo-item-btns {
+    display: flex;
+}
+
+.todo-item-btns i {
+    transform:translateY(50%);
+}
+
+.divider {
+    margin: 0 calc(var(--default-size) / 2);
+    background: var(--bg-grey);
+    height: var(--default-size);
+    width: 1px;
+}
+
+input:focus {
+    border: 0 !important;
+    outline: 0 !important;
+}
+
+.complete-btn {
+    color: var(--bg-primary);
+}
+
+.complete-btn:hover {
+    color: var(--bg-complement);
+}
+
+.trash-btn {
+    color: var(--bg-dark);
+}
+
+.trash-btn:hover {
+    color: var(--color-alert);
+}
+
+.complete-btn, .trash-btn {
+    cursor: pointer;
+    transition: color .5s;
+}
+
+.container {
+    max-width: var(--page-width);
+    margin: 0 auto;
+    padding: 0 calc(var(--default-size) + 5px);
+}
+
+.horizontal-divider {
+    width: calc(var(--page-width) / 2);
+    height: 1px;
+    background: var(--bg-grey);
+    margin: calc(var(--default-size) * 1.5) auto;
+}
